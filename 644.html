@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Degree Verification Report</title>
+
+<style>
+body{
+  background:#e6e6e6;
+  font-family:"Times New Roman", serif;
+}
+
+.a4{
+  width:210mm;
+  min-height:297mm;
+  margin:auto;
+  background:#fff;
+  padding:35px;
+  border:2px solid #000;
+  position:relative;
+  overflow:hidden;
+}
+
+/* WATERMARK */
+.watermark{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(-30deg);
+  font-size:80px;
+  color:#000;
+  opacity:0.06;
+  white-space:nowrap;
+  pointer-events:none;
+}
+
+/* HEADER */
+.header{
+  text-align:center;
+  margin-bottom:25px;
+}
+.header .logo{
+  font-size:26px;
+  font-weight:bold;
+  letter-spacing:1px;
+}
+.header .sub{
+  font-size:14px;
+}
+/* TABLE */
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:30px;
+}
+td{
+  border:1px solid #000;
+  padding:10px;
+  font-size:16px;
+}
+.status{
+  color:green;
+  font-weight:bold;
+}
+
+/* FOOTER */
+.note{
+  margin-top:30px;
+  font-size:14px;
+}
+.footer{
+  margin-top:40px;
+  text-align:center;
+  font-size:12px;
+}
+
+@media print{
+  body{ background:none; }
+}
+</style>
+
+</head>
+<body>
+
+<div class="a4">
+
+<div class="watermark">
+  GURU NANAK DEV UNIVERSITY
+</div>
+
+<div class="qr">
+  <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://yourdomain.com/verify-gaganjeet.html">
+  <span>Scan to Verify</span>
+</div>
+
+<div class="header">
+  <div class="logo">GURU NANAK DEV UNIVERSITY</div>
+  <div class="sub">Amritsar, Punjab (India)</div>
+  <div class="sub">(Established under Act No. 21 of 1969)</div>
+  <h3>DEGREE VERIFICATION REPORT</h3>
+</div>
+
+<table>
+<tr><td><b>Name of Candidate</b></td><td>Gaganjeet Singh</td></tr>
+<tr><td><b>Father’s Name</b></td><td>Gurpreet Singh</td></tr>
+<tr><td><b>University</b></td><td>:contentReference[oaicite:0]{index=0}</td></tr>
+<tr><td><b>Degree</b></td><td>Bachelor of Arts (BA – General)</td></tr>
+<tr><td><b>Registration Number</b></td><td>2019FDA26</td></tr>
+<tr><td><b>Roll Number</b></td><td>BAG1312518</td></tr>
+<tr><td><b>Session</b></td><td>2019 – 2022</td></tr>
+<tr><td><b>Verification Status</b></td><td class="status">VERIFIED &amp; GENUINE</td></tr>
+</table>
+
+<div class="note">
+<b>Verification Statement:</b><br><br>
+This is to certify that the above-mentioned academic credentials of
+<b>Mr. Gaganjeet Singh</b> have been verified from official university records
+and are found to be authentic and valid.
+</div>
+
+<div class="footer">
+This is a system-generated verification report.<br>
+No physical signature is required.<br>
+Verified digitally through QR Code.
+</div>
+
+</div>
+
+</body>
+</html>
+
